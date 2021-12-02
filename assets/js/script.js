@@ -1,17 +1,10 @@
-/* var formatEL = document.querySelector('')
-var searchEL = document.querySelector('') */
 var buttonEL = document.querySelector('#btn');
 var choicesEL = document.querySelector('#choices')
 var searchEL = document.querySelector('#search')
 var searchTerm = ''
 var selectedOption
 var fetchURL
-
-
-
-
-
-
+var placeholder = document.querySelector('#placeholder')
 
 function submit() {
   searchTerm = searchTerm = searchEL.value.trim();
@@ -38,11 +31,33 @@ function submit() {
     return response.json();
   })
     .then(function (data) {
-      console.log(data)
-      for (var item of data.results) {
-        console.log(item.title)
+      for (var item of data.results) { 
+        var title = item.title
+        var url = item.url
+        var subject = JSON.stringify(item.subject)
+        var description = JSON.stringify(item.description)
+        var titleEL = document.createElement('h1') 
+        var urlEL = document.createElement('link')
+        var subjectEL = document.createElement('h2') 
+        var descriptionEL = document.createElement('h3')
+
+        titleEL.className = ''
+        urlEL.className = ''
+        subjectEL.className = ''
+        descriptionEL.className = ''
+
+        titleEL.textContent = title
+        urlEL.textContent = url
+        subjectEL.textContent = subject
+        descriptionEL.textContent = descriptionEL
+
+        testDiv.appendChild(titleEL)
+        testDiv.appendChild(urlEL)
+        testDiv.appendChild(subjectEL)
+        testDiv.appendChild(descriptionEL)
       }
     })
+    
 
   return fetchURL.json
 };
