@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/search.css">
+    <!-- Am I linking my CSS to the wrong file/folder? -->
+    <title>Library Results Page</title>
+</head>
+
+<body>
+    <span id="leftside">
+        <header>
+            <h1>Library of Congress Search Engine</h1>
+        </header>
+        <div>
+            <input id="textbx" type="text" placeholder="Search">
+            <br>
+            <select id="choicess">
+                <option value=''>------</option>
+                </option>
+                <option value="maps">Maps</option>
+                <option value="audio">Audio</option>
+                <option value="photos">Photos</option>
+                <option value="manuscripts">Manuscripts</option>
+                <option value="newspapers">Newspapers</option>
+                <option value="film-and-video">Film & Video</option>
+                <option value="notated-music">Notated Music</option>
+                <option value="websites">Websites</option>
+            </select>
+            <br>
+            <button id="search" type="Submit">Search</button>
+            <br>
+            <button id="backbtn" onclick="goBack()">← Go back.</button>
+        </div>
+    </span>
+
+    <main id="rightside">
+        <section>
+            <h2>Showing results for "Searched input"</h2>
+        </section>
+        <div id="boxes">
+            <section>
+                <h3>Lorem ipsum dolor sit amet,..</h3>
+                <p>Date: Lorem ipsum dolor sit amet,..</p>
+                <p>Subjects: Lorem ipsum dolor sit amet,..</p>
+                <p>Description: Lorem ipsum dolor sit amet,..</p>
+                <button id="rmore" type="Submit">Read More</button>
+            </section>
+            <section>
+                <h3>Lorem ipsum dolor sit amet,..</h3>
+                <p>Date: Lorem ipsum dolor sit amet,..</p>
+                <p>Subjects: Lorem ipsum dolor sit amet,..</p>
+                <p>Description: Lorem ipsum dolor sit amet,..</p>
+                <button id="rmore" type="Submit">Read More</button>
+            </section>
+            <section>
+                <h3>Lorem ipsum dolor sit amet,..</h3>
+                <p>Date: Lorem ipsum dolor sit amet,..</p>
+                <p>Subjects: Lorem ipsum dolor sit amet,..</p>
+                <p>Description: Lorem ipsum dolor sit amet,..</p>
+                <button id="rmore" type="Submit">Read More</button>
+            </section>
+        </div>
+
+    </main>
+    <!-- <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script> -->
+    <script src="./assets/js/search.js"></script>
+</body>
+
+</html>

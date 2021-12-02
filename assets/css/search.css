@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    background-color:  rgb(164, 199, 199);
+    display: flex;
+    /* ?? */
+}
+
+#leftside {
+    /* background-color: rgb(164, 199, 199); */
+    float: left;
+    width: 25%;
+    height: 100vh;
+    margin-left: 10px;
+}
+
+#rightside {
+    width: 80%;
+    /* margin-left: 10px; */
+    background-color: grey;
+}
+
+#boxes {
+   
+}
+
+main section h2 {
+    /* padding-bottom: 20px; */
+
+}
+
+#boxes section {
+    /* padding-top: 10px; */
+    padding-bottom: 10px;
+    background-color: honeydew;
+    border: black;
+    margin: 0 7px;
+    border-radius: 2px;
+
+}
+
+#boxes section h3, p {
+    padding: 0 17px;
+}
+
+#boxes section h3 {
+    padding-top: 10px;
+}
+#boxes section p {
+    margin: 0px;
+}
+
+#rmore {
+    background-color: darkblue;
+    color: white;
+    margin-left: 25px;
+    margin-top: 12px;
+}
+
+#textbx {
+    width: 80%;
+}
+
+#search {
+    background-color: green;
+    width: 82%;
+    /* margin-bottom: 5px; */
+    margin-top: 5px;
+}
+
+#backbtn {
+    background-color: red;
+    width: 82%;
+    /* margin-bottom: 5px; */
+    margin-top: 5px;
+
+}
+
+#choicess {
+    width: 82%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
