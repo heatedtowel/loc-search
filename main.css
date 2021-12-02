@@ -1,5 +1,5 @@
 body {
-    background-color: #659dbd;
+    background-color: #2f323a;
 }
 
 header {
@@ -13,7 +13,7 @@ header {
     display: flex;
     flex-direction: column;
     align-content: space-between;
-    background-color: #bc986a;
+    background-color: #f4998d;
     padding: 5px;
     height: 300px;
     width: 60%;
@@ -23,14 +23,21 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 5px;
 }
 
 #search,
 #choices,
 #btn {
     width: 75%;
+    font-size: large;
+    padding: 10px;
+    margin: 3px;
 }
 
 #btn {
-    background-color: chartreuse;
+    background-color: #f44e3f;
+    border-radius: 5px;
 }
+
+#btn:hover {}
